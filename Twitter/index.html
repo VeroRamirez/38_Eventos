@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">	
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div class="well">Basic Well</div>
+					</div>
+				</div>
+			</header>
+			<section>
+			    <form>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Anade tu nueva tarea"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="btnEnviar" onclick="creaItem();">
+                            <span class="glyphicon glyphicon-plus"></span> Agregar
+                        </button>
+                    </div>
+                </form>
+			</section>
+			<section>
+			    <div id="lista">
+			        
+			    </div>
+			</section>
+		</div>
+    		
+	    <script src="js/jquery-1.11.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/personal.js"></script>
+	</body>
+</html>
