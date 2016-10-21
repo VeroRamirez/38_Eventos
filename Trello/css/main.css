@@ -1,0 +1,9 @@
+.bote{
+    margin-left: 90%;
+}
+
+@media (max-width: 600px) {
+  .icono {
+    display: none;
+  }
+}

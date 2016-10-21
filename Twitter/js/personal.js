@@ -1,27 +1,30 @@
-elemento=1;
+
 function creaItem(){
     
     msg=document.getElementById("comment").value;
-    var checkbx = document.createElement("input");
+    if(msg!=null || msg!=""){
+        document.getElementById("comment").value="";
+        var checkbx = document.createElement("input");
 
-    checkbx.type = "checkbox";    // make the element a checkbox
-    checkbx.name = "miOpcion";
+        checkbx.type = "checkbox";    // make the element a checkbox
+        checkbx.name = "miOpcion";
+
+        li=document.createElement("li");
+        li.setAttribute("class","list-group-item well well-sm");
+        document.getElementById("lista").appendChild(li);
+        li.appendChild(checkbx);
+        li.appendChild(document.createTextNode(" " + msg));
+
+        icono = document.createElement("span");
+        icono.setAttribute("class","glyphicon glyphicon-trash bote");
+        icono.addEventListener("click", borrame);
+        icono.style.cursor="pointer";
+        li.appendChild(icono);
+
+        li.addEventListener("click", tachame);
+    }
     
-    li=document.createElement("li");
-    li.setAttribute("class","list-group-item well well-sm");
-    document.getElementById("lista").appendChild(li);
-    li.appendChild(checkbx);
-    li.appendChild(document.createTextNode(" " + msg));
     
-    icono = document.createElement("span");
-    icono.setAttribute("class","glyphicon glyphicon-trash bote");
-    icono.addEventListener("click", borrame);
-    icono.style.cursor="pointer";
-    li.appendChild(icono);
-    
-    li.addEventListener("click", tachame);
-    
-    elemento++;
 }
 
 function tachame(){
