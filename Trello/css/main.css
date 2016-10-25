@@ -1,9 +1,37 @@
-.bote{
-    margin-left: 90%;
+h1{
+    color:#5bc0de;
+    font-family: fantasy;
+}
+.lista{
+    width: 20%;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #5bc0de;
+}
+.inline{
+    float:left;
 }
 
-@media (max-width: 600px) {
-  .icono {
-    display: none;
-  }
+textarea{
+    width: 100%;
+}
+
+label{
+    width: 100%;
+    border: 1px solid pink;
+}
+
+.well-sm {
+    background-color: pink;
+    margin-bottom: 5px;
+    font-weight: 700 !important;
+}
+.well {
+    margin-bottom: 5px;
+    padding: 8px;
+    font-weight: 100;
+}
+.glyphicon-remove{
+    font-size: 15px;
+    color:red;
 }

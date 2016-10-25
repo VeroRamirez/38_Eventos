@@ -11,29 +11,18 @@
 			<header>
 				<div class="row">
 					<div class="col-xs-12 text-center">
-						<div class="well">MI TRELLO</div>
+						<div class="well"><h1>MI TRELLO</h1></div>
 					</div>
 				</div>
 			</header>
 			<section>
-			    <form>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Anade tu nueva tarea"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-primary" id="btnEnviar" onclick="creaItem();">
-                            <span class="glyphicon glyphicon-plus"></span> Agregar
-                        </button>
-                    </div>
-                </form>
-			</section>
-			<section id="area">
-			    <ul id="lista" class="list-group">
-			        
-			    </ul>
+                <div class="inline" id="lista-1">
+                    <button class="btn btn-info" id="btnLista" onclick="creaLista()">
+                       Agregar Lista
+                    </button>
+                </div>
 			</section>
 		</div>
-    		
 	    <script src="js/jquery-1.11.3.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script src="js/personal.js"></script>
